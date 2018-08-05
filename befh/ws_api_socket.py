@@ -78,7 +78,7 @@ class WebSocketApiClient(ApiSocket):
 
     def __start(self, reconnect_interval=10):
         while True:
-            self.ws.run_forever()
+            self.ws.run_forever(ping_interval=100)
             Logger.info(self.__class__.__name__, "Socket <%s> is going to reconnect..." % self.id)
             time.sleep(reconnect_interval)
 

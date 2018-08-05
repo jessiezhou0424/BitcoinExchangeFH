@@ -26,7 +26,7 @@ from befh.exchanges.wex import ExchGwWex
 from befh.exchanges.bitflyer import ExchGwBitflyer
 from befh.exchanges.coinone import ExchGwCoinOne
 from befh.clients.kdbplus import KdbPlusClient
-from befh.clients.mysql import MysqlClient
+from befh.clients.mysql import MysqlClients
 from befh.clients.sqlite import SqliteClient
 from befh.clients.csv import FileClient
 from befh.clients.zmq import ZmqClient
